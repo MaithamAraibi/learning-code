@@ -16,6 +16,50 @@ A cross-platform (iOS + Android) mobile app prototype built with Expo/React Nati
 - Includes Tartīl and Canonical Recitations (Qirā’āt) pathway note.
 - UI Samples v2 tab with onboarding, lesson, and progress dashboard starter layouts.
 
+## Instruction on How to Operate
+
+### A) Start the app
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start Expo:
+   ```bash
+   npm start
+   ```
+3. Open on phone using Expo Go (scan QR), or run simulator:
+   ```bash
+   npm run ios
+   npm run android
+   ```
+
+### B) Use app tabs
+- **Learn** tab: actual lesson flow.
+- **UI Samples v2** tab: reference screens for UX design.
+
+### C) Change display mode
+- Tap **Mode: system/light/dark** button in top bar.
+- Each tap cycles between:
+  1. system mode,
+  2. light mode,
+  3. dark mode.
+
+### D) Operate learning flow
+1. Read the displayed lesson prompt.
+2. Tap **🔊 Listen & Read With Reader** to hear voice playback.
+3. Enter practice text in input field.
+4. Tap **Submit**:
+   - If accepted, points are added and stage advances.
+   - If not accepted, app shows **"Repeat in Arabic"** and you retry.
+5. Tap **Skip** to move to next stage without points.
+
+### E) Understand scoring
+- Points accumulate on accepted submissions.
+- Grade levels auto-update:
+  - Beginner (< 15)
+  - Intermediate (15–29)
+  - Advanced (30+)
+
 ## UI/UX Samples v2
 The app includes **UI Samples v2** with:
 - Onboarding card sample.
@@ -52,14 +96,3 @@ If you get `403 Forbidden` from npm registry, usually your network/proxy/securit
    npm cache clean --force
    npm install
    ```
-
-## Run Locally
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start Expo:
-   ```bash
-   npm start
-   ```
-3. Open on iOS/Android via Expo Go.
