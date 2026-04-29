@@ -1,24 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Palette } from '../theme/palette';
 
-export function BottomAdBanner() {
+export function BottomAdBanner({ palette }: { palette: Palette }) {
   return (
-    <View style={styles.banner}>
-      <Text style={styles.text}>Ad Banner • Learn Quran Better</Text>
+    <View style={[styles.banner, { borderTopColor: palette.border, backgroundColor: palette.surface }]}>
+      <Text style={[styles.text, { color: palette.subtext }]}>Ad Banner • Learn Quran Better</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  banner: {
-    paddingVertical: 10,
-    borderTopWidth: 1,
-    borderTopColor: '#ddd',
-    backgroundColor: '#f5f5f5'
-  },
-  text: {
-    textAlign: 'center',
-    color: '#333',
-    fontSize: 12
-  }
+  banner: { paddingVertical: 10, borderTopWidth: 1 },
+  text: { textAlign: 'center', fontSize: 12 }
 });
