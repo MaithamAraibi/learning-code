@@ -1,104 +1,101 @@
-# Quran Reader Pro — Product Plan
+# Quran Reader Pro — Project Brainstorm Map
 
-This repository now contains a clear product plan for a mobile app that helps users learn to read the Quran with professional recitation guidance.
+This document is a structured brainstorm map for building a mobile app that teaches Quran reading with professional recitation guidance.
 
-## 1) App vision
-Build a beginner-friendly app that teaches Quran reading step by step, with:
-- How to read Arabic letters correctly.
-- Rules of Quranic reading (Tajweed).
-- Movements/harakat (fatha, kasra, damma, sukun, shadda, madd, tanween).
-- Tartīl (measured, clear recitation) principles and practical examples.
-- Canonical recitations (Qirā’āt) explained at a beginner-friendly level.
+## 1) Core Goal
+**Help learners read Quran correctly and confidently** through guided lessons, Tajweed practice, and live correction.
 
-The app will launch on both **iOS** and **Android**.
+---
 
-## 2) Core features
+## 2) Brainstorm Map (Mind Map Style)
 
-### A. Learn to read module
-- Arabic letters with pronunciation audio.
-- Letter forms by position (beginning/middle/end).
-- Syllable and word-building lessons.
-- Short quizzes after each lesson.
+- **Quran Reader Pro**
+  - **Learning Experience**
+    - Arabic letters (recognition + pronunciation)
+    - Harakat/movements (fatha, kasra, damma, sukun, shadda, madd, tanween)
+    - Word building and fluency drills
+    - Lesson difficulty levels (beginner → advanced)
+  - **Tajweed & Reading Rules**
+    - Noon Sakinah / Tanween rules
+    - Meem Sakinah rules
+    - Qalqalah
+    - Madd types
+    - Heavy/light letters
+    - Waqf & Ibtida (stopping/starting)
+  - **Tartīl + Canonical Recitations**
+    - Teach Tartīl as the main reading method (slow, clear, measured)
+    - Introduce Canonical Recitations (Qirā’āt)
+    - MVP focus: Hafs ‘an ‘Asim track
+    - Future: comparison between recitation paths
+  - **AI Reading Correction**
+    - User reads aloud
+    - App detects reading mistakes
+    - App says: **"Repeat in Arabic"**
+    - Continue only if:
+      - User reads correctly, or
+      - User chooses skip
+    - Store common mistakes for personalized revision
+  - **Points, Grades, and Stages**
+    - Points for accurate reading and first-try correctness
+    - Grade increase based on lesson performance
+    - Grade unlocks next stage
+    - User can skip stage, but earns **0 points** for skipped items
+    - Stage report: completed vs skipped vs needs review
+  - **Engagement**
+    - Daily streaks
+    - Achievement badges
+    - Weekly goals
+    - Parent/teacher progress share (future)
+  - **Monetization**
+    - One-time app price: **3 dinars**
+    - Bottom screen banner ad
+    - Optional future premium add-ons (advanced tracks)
+  - **Platforms & Tech**
+    - iOS + Android
+    - Flutter (recommended) or React Native
+    - Speech/audio processing pipeline
+    - Offline lessons + cached audio
+  - **UX/UI**
+    - RTL-first Arabic interface
+    - Large readable Arabic font
+    - Simple tabs: Learn / Practice / Rules / Progress / Settings
+    - Beginner-friendly flow with clear CTAs
+  - **Content Governance**
+    - Verified Quran text source
+    - Scholar review workflow
+    - Versioning for lesson content updates
+  - **Compliance & Safety**
+    - Privacy policy
+    - Age-appropriate ad settings
+    - Consent for microphone usage
 
-### B. Tajweed rules module
-- Rule-by-rule lessons using simple language.
-- Audio examples for each rule.
-- Practice mode: users listen and repeat.
-- Visual highlights in text where the rule applies.
+---
 
-Suggested rule groups:
-- Noon Sakinah & Tanween rules.
-- Meem Sakinah rules.
-- Qalqalah.
-- Madd rules.
-- Heavy/light letters.
-- Stops and starts (Waqf & Ibtida).
+## 3) MVP Brainstorm (What to Build First)
+1. Onboarding + level placement.
+2. Beginner letters and harakat modules.
+3. 15 Tajweed lessons with audio examples.
+4. Live reading correction with “Repeat in Arabic” prompt.
+5. Points + grade + stage progression logic.
+6. Tartīl-focused Hafs ‘an ‘Asim recitation path.
+7. 3-dinar purchase + bottom ad banner.
+8. Publish on iOS and Android.
 
-### C. Harakat and movements module
-- Dedicated lessons for each movement.
-- Animated mouth-position tips (optional in v2).
-- Exercises that compare similar sounds.
+---
 
-### D. Recitation styles module
-- Teach Tartīl as a core reading practice: slow, accurate, and reflective recitation.
-- Explain the Canonical Recitations (the recognized Qirā’āt) at a beginner level.
-- Focus first release on one default riwāyah for consistency (e.g., Hafs ‘an ‘Asim).
-- Add guided comparisons with other canonical recitations in future updates.
+## 4) Future Ideas Backlog
+- Voice quality scoring (tone, pace, clarity).
+- Teacher mode (assign homework + review recordings).
+- Community challenge mode.
+- Multi-language explanations (Arabic, English, Urdu, Bahasa).
+- Wearables/reminder integration for daily practice.
 
-### E. Progress & motivation
-- Daily learning streak.
-- Achievement badges.
-- Lesson completion tracking.
+---
 
-
-### F. Reading correction and advancement engine
-- While the user reads aloud, the app listens and detects pronunciation/rule mistakes.
-- When an error is detected, the app prompts: **"Repeat in Arabic"**.
-- Lesson flow only continues when the user either:
-  - reads the part correctly, or
-  - chooses to skip.
-- The app records each correction attempt for progress analytics.
-
-### G. Points, grades, and stages
-- Users earn points for correct reading and first-try accuracy.
-- Points contribute to a grade for each lesson/stage.
-- Grade completion unlocks the next stage in a structured path.
-- Users may skip to the next stage at any time, but skipped content grants **no points**.
-- Stage history clearly marks completed vs skipped lessons.
-
-
-## 3) Monetization and pricing
-- One-time purchase price: **3 dinars**.
-- Include a **banner ad at the bottom** of the main learning screens.
-- Recommendation: clearly disclose ads in the store listing and privacy policy.
-
-## 4) Platform and tech recommendation
-To support iOS and Android from one codebase:
-- **Flutter** (recommended) or React Native.
-- Audio engine for precise playback.
-- Cloud backend for progress sync (optional in v1).
-
-## 5) MVP scope (first release)
-1. Onboarding and level placement.
-2. 20 beginner lessons (letters + harakat).
-3. 15 Tajweed lessons with audio.
-4. Basic quizzes and progress tracking.
-5. Real-time reading correction with "Repeat in Arabic" prompt.
-6. Points and grade-based stage progression (skip allowed without points).
-7. One Tartīl-focused recitation track (Hafs ‘an ‘Asim) with sample surahs.
-8. In-app purchase at 3 dinars + bottom banner ad.
-9. iOS + Android release builds.
-
-## 6) UX requirements
-- Large Arabic text with readable fonts.
-- Right-to-left support.
-- Offline lesson downloads for core content.
-- Simple navigation: Learn, Practice, Rules, Progress, Settings.
-
-## 7) Compliance and quality
-- Respect Quran text integrity and trusted source verification.
-- Include scholar review before release.
-- Add privacy policy and age-appropriate ad settings.
-
-## 8) Proposed next step
-Create clickable UI wireframes and a detailed lesson curriculum, then start building the Flutter MVP.
+## 5) Next Action Plan
+- Convert this brainstorm map into:
+  1) Feature requirements document,
+  2) User stories,
+  3) UI wireframes,
+  4) Technical architecture,
+  5) Sprint plan for MVP implementation.
